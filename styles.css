@@ -87,3 +87,32 @@ div.lunchSpecials {
 div.hours {
     text-align: center;
 }
+
+.disclaimer {
+    text-align: center;
+}
+
+.menuCategory .labels{
+    text-align: center;
+}
+
+span.itemNumber, span.itemName {
+    display: inline-block;
+}
+
+span.itemNumber {
+    width: 40px;
+    text-align: right;
+}
+
+span.itemName {
+    width: 225px;
+}
+
+div.spicy span.itemNumber {
+    background: url(pepper.gif) 25px 0 no-repeat;
+}
+
+div.spicy span.itemName {
+    padding-left: 0px;
+}
