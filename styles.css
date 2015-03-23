@@ -40,12 +40,15 @@ body {
     font-style: italic;
     font-family: sans-serif;
     text-align: center;
+    margin-bottom: -1px;
 }
 
 .lunchSpecials p {
     color: red;
     text-align: center;
     font-size: 11px;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 .menuCategory h2 {
@@ -66,6 +69,9 @@ body {
 
 .labels {
     color: red;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
 }
 
 .spicy {
@@ -82,23 +88,32 @@ div.lunchSpecials {
     width: 350px;
 }
 
-#specials,.col {
-    margin: auto 20px;
-}
-
 div.hours {
     text-align: center;
+    margin-top: 5px;
+    font-size: 11px;
+    font-weight: bold;
 }
 
 .disclaimer {
     text-align: center;
+    margin-top: 10px;
 }
 
-.menuCategory .labels{
-    text-align: center;
+div.disclaimer .warning {
+    font-size: 17px;
+    background: url(pepper.gif) 60px 6px no-repeat;
+    background-color: white;
+    display: block;
+    font-stretch: semi-condensed;
 }
 
-span.itemNumber, span.itemName {
+div.disclaimer span.solution {
+    font-size: 11px;
+    display: block;
+}
+
+span.itemNumber, span.itemName, span.itemPrice {
     display: inline-block;
 }
 
@@ -108,14 +123,9 @@ span.itemNumber {
 }
 
 div.spicy span.itemName {
-    background: url(pepper.gif) -1px 0 no-repeat;
+    background: url(pepper.gif) 0px 3px no-repeat;
+    background-color: white;
     padding-left: 21px;
-}
-
-.priceConnector {
-    border-bottom: 1px dotted green;
-    display: inline-block;
-    width: 100%;
 }
 
 span.item {
@@ -126,10 +136,11 @@ span.item {
 }
 
 span.priceConnector {
-    width: 100%;
+    width: 275px;
     height: 10px;
     position: absolute;
     border-bottom: 2px dotted green;
+    z-index: -1;
 }
 
 span.itemName {
@@ -139,4 +150,57 @@ span.itemName {
     padding-right: 3px;
 }
 
+.spicy span.priceConnector{
+    border-bottom: 2px dotted red;
+}
 
+.small, .large {
+    width: 25px;
+    display: inline-block;
+    text-align: right;
+}
+
+span.sides {
+    width: 237px;
+    display: inline-block;
+    margin-left: 57px;
+    margin-right: 0px;
+}
+span.itemPrice {
+    background-color: white;
+}
+
+div.lunchSpecials span {      /*selects all spans within any div with the class of lunchSpecials*/
+    font-size: 14px;
+    font-weight: bold;
+}
+
+div.appetizers span {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+span.itemMultiprice {
+    position: relative;
+    display: inline-block;
+    width: 184px;
+    height: 12px;
+}
+
+div.menuCategory {
+    font-size: 12px;
+}
+
+div.separator {
+    border-top: 8px solid red;
+    width: 320px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+div.appetizers .itemDescription {
+    display: block;
+    font-size: 10px;
+    margin-left: 65px;
+    margin-right: 25px;
+}
