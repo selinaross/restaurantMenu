@@ -31,6 +31,24 @@ body {
     font-weight: bold;
 }
 
+.specialDishes span.priceConnector {
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    border-bottom: 2px dotted green;
+    z-index: -1;
+}
+
+.specialDishes span.item {
+    width: 100%;
+}
+
+.specialDishes span.itemName {
+    position: absolute;
+    background-color: white;
+    padding-left: 0;
+}
+
 .lunchSpecials h1 {
     text-transform: uppercase;
     color: red;
