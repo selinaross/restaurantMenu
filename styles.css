@@ -25,10 +25,26 @@ body {
 
 .specialDishes thead td:nth-child(3) {
     font-size: 19px;
-    width: 223px;
+    width: 279px;
     padding: 0;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.specialDishes td:nth-child(4){
+    text-align: right;
+}
+
+.specialDishes td:nth-child(5){
+    text-align: right;
+}
+
+.specialDishes td:nth-child(6){
+    text-align: right;
+}
+
+.specialDishes td:nth-child(7){
+    text-align: right;
 }
 
 .specialDishes span.priceConnector {
@@ -186,6 +202,7 @@ span.sides {
 }
 span.itemPrice {
     background-color: white;
+
 }
 
 div.lunchSpecials span {      /*selects all spans within any div with the class of lunchSpecials*/
