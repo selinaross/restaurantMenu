@@ -20,7 +20,15 @@ body {
 .specialDishes thead td {
     color: red;
     padding: 5px;
+    padding-right: 0;
+    padding-left: 13px;
     font-size: 9px;
+    vertical-align: bottom;
+    padding-bottom: 0px;
+}
+
+.specialDishes table {
+    border-spacing: 0;
 }
 
 .specialDishes thead td:nth-child(3) {
@@ -31,19 +39,7 @@ body {
     font-weight: bold;
 }
 
-.specialDishes td:nth-child(4){
-    text-align: right;
-}
-
-.specialDishes td:nth-child(5){
-    text-align: right;
-}
-
-.specialDishes td:nth-child(6){
-    text-align: right;
-}
-
-.specialDishes td:nth-child(7){
+.specialDishes td:nth-child(4), .specialDishes td:nth-child(5), .specialDishes td:nth-child(6), .specialDishes td:nth-child(7){
     text-align: right;
 }
 
@@ -52,6 +48,7 @@ body {
     height: 10px;
     position: absolute;
     border-bottom: 2px dotted green;
+    left: 0;
     z-index: -1;
 }
 
